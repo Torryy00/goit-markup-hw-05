@@ -314,31 +314,90 @@
     </div>
     </section>
     </main>
-    <div class="modal-overlay">
-      <div class="modal">
-        <button class="button-model" type="button">
-          <svg class="modal-svg" width="8px" height="8px">
+    <!-- MODEL -->
+    <div class="overlay" data-modal>
+      <div class="modal-overlay">
+        <button type="button" class="model-close-btn" data-modal-close>
+          <svg class="close-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="model-text">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-          <label class="form-label">
-            Name
-            <input class="form-input" type="text" name="username"/>
-          </label>
-          <label class="form-label">
-            Phone
-            <input class="form-input" type="tel" name="number"/>
-          </label>
-          <label class="form-label">
-            Email
-            <input class="form-input" type="email" name="email"/>
-          </label>
-          <label class="form-label">
-            Comment
-            <textarea class="textrea-comment" name="comment" placeholder="Text input"></textarea>
-          </label>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form action="overlay-form" class="overlay-form">
+          <div class="form-field">
+            <label for="user-name" class="label">Name</label>
+            <div class="modal-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="Phone" class="label">Phone</label>
+            <div class="modal-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                name="Phone"
+                id="Phone"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email" class="label">Email</label>
+            <div class="modal-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="email"
+                id="email"
+                required
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-comment">
+            <label for="user-comment" class="label">Comment</label>
+            <textarea
+              class="user-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="form-terms">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="modal-terms visually-hidden"
+            />
+            <label for="user-privacy" class="modal-terms-check">
+              <span class="span-check"
+                ><svg class="check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+
+              <a class="form-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="terms-btn">send</button>
         </form>
       </div>
     </div>
