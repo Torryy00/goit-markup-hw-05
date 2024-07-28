@@ -18,7 +18,7 @@
         <nav class="nav-container">
             <a class="logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
             <ul class="ul-nav-link">
-                <li><a class="nav-link" href="./index.html">Studio</a></li>
+                <li><a class="nav-link current" href="./index.html">Studio</a></li>
                 <li><a class="nav-link" href="">Portfolio</a></li>
                 <li><a class="nav-link" href="">Contacts</a></li>
             </ul>
@@ -37,7 +37,7 @@
         <div class="container">
         <h1 class="headline">Effective Solutions
             for Your Business</h1>
-            <button type="button" class="button">Order Service</button>
+            <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
     </section>
     <!-- SECTION 2 -->
@@ -371,7 +371,7 @@
       </div>
     </footer>
      <!-- MODEL -->
-        <div class="overlay" data-modal>
+        <div class="backdrop is-open" data-modal>
           <div class="modal-overlay">
             <button type="button" class="model-close-btn" data-modal-close>
               <svg class="close-btn" width="8" height="8">
@@ -456,5 +456,6 @@
             </form>
           </div>
         </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
